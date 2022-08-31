@@ -1,0 +1,3 @@
+#!/bin/bash
+#This is a script that creates a directory in specified path.
+mkdir /tmp/my_first_directory

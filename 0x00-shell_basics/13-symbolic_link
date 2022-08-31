@@ -1,0 +1,3 @@
+#!/bin/bash
+# This is a script for linking one file to aonther
+ln -s /bin/ls __ls__

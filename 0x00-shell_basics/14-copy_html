@@ -1,0 +1,3 @@
+#!/bin/bash
+# This is a script for copying all and new html files to parent directory.
+cp -nu *.html ..

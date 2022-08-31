@@ -1,0 +1,3 @@
+#!/bin/bash
+# This is a script for displaying the content list of the current directory
+ls 

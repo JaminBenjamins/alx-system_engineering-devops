@@ -1,0 +1,3 @@
+#!/bin/bash
+# This is a script for displaying files in the current directory in long format.
+ls -l
