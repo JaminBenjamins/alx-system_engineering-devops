@@ -1,3 +1,2 @@
 #!/bin/bash
-# This is a script for listing all files including /boot
 ls -al . .. /boot
