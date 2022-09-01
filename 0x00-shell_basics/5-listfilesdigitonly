@@ -1,3 +1,2 @@
 #!/bin/bash
-# This is a command for displaying file content in this directory in digits using long format including hidden files.
 ls -lna

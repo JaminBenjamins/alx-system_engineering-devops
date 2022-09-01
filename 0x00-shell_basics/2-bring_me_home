@@ -1,3 +1,2 @@
 #!/bin/bash
-# This is a script for going to home directory from the current directory.
 cd ~ 

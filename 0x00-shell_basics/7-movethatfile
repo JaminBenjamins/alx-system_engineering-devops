@@ -1,3 +1,2 @@
 #!/bin/bash
-# This is a command for moving a file. 
 mv /tmp/betty /tmp/my_first_directory/
