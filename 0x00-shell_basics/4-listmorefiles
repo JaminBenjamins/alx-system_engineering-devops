@@ -1,3 +1,2 @@
 #!/bin/bash
-# This is a script for listing all files including hidden files in long format
 ls -al
