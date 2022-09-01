@@ -1,3 +1,2 @@
 #!/bin/bash
-# This is a command for deleting a file
 rm /tmp/my_first_directory/betty
