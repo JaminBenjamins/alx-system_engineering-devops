@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# A function that prints formatted output 
+# When multiple of 3 prints fizz multiple of 5 print buzz
+# Multlple of both print fizzbuzz
+
+for nu in {1..100}
+do
+	if ((nu % 3 == 0 && nu % 5 == 0))
+	then
+		echo "FizzBuzz"
+	elif ((nu % 3 == 0))
+	then
+		echo "Fizz"
+	elif ((nu % 5 == 0))
+	then
+		echo "Buzz"
+	else
+		echo "$nu"
+	fi
+done
