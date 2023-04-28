@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# Display the content of the currnt working directory in list form
-
-list=$(ls)
-for fl in $list
-do
-	echo "$fl" | cut -d- -f2
-done
