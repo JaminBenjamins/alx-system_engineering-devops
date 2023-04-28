@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Display a stream of characters recursively ten times
+
+for _ in {1..10}
+do
+	echo "Best School"
+done
