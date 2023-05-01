@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# A script that prints a string with exception at 9th
+
+index=0
+while [ $index -le 9 ]
+do
+	if [ $index -eq 8 ]
+	then
+		echo "Hi"
+	fi
+		echo "Best School"
+	((index++))
+done
