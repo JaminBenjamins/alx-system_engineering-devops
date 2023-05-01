@@ -1,81 +1,105 @@
-# Shell, init files, variables and expansions
+# Loops, conditions and parsing
 
-In this project, I learned about initialization files, local, global, and
-reserved variables, and special parameters in the Shell. Further, I practiced
-using expansions, performing arithmetic operations, and utilizing aliases.
+In this project, I began working loops and conditionals statemetns in Bash.
+
+## Helper File :raised_hands:
+
+* [apache-access.log](./apache-access.log): An Apache access log file parsed in
+tasks `102` and `103`.
 
 ## Tasks :page_with_curl:
 
-* **0. <o>**
-  * [0-alias](./0-alias): Bash script that creates an alias named `ls` with value `rm *`.
+* **0. Create a SSH RSA key pair**
+  * [0-RSA_public_key.pub](./0-RSA_public_key.pub): A public SSH key uploaded for the
+  purposes of Holberton School.
 
-* **1. Hello you**
-  * [1-hello_you](./1-hello_you): Bash script that prints `hello user`, where user is the
-  current Linux user.
+* **1. For Holberton School loop**
+  * [1-for_holberton_school](./1-for_holberton_school): Bash script that displays
+  `Holberton School` 10 times using a `for` loop.
 
-* **2. The path to success is to take massive, determined action**
-  * [2-path](./2-path): Bash script that adds `/action` to the `PATH`.
+* **2. While Holberton School loop**
+  * [2-while_holberton_school](./2-while_holberton_school): Bash script that
+  displays `Holberton School` 10 times using a `while` loop.
 
-* **3. If the path be beautiful, let us not ask where it leads**
-  * [3-paths](./3-paths): Bash script that counts the number of directories in the `PATH`.
+* **3. Until Holberton School loop**
+  * [3-until_holberton_school](./3-until_holberton_school): Bash script that displays
+  `Holberton School` 10 times using an `until` loop.
 
-* **4. Global variables**
-  * [4-global_variables](./4-global_variables): Bash script that lists environment variables.
+* **4. If 9, say Hi!**
+  * [4-if_9_say_hi](./4-if_9_say_hi): Bash script that displays `Holberton School`
+  10 times using a `while` loop.
+  * For the 9th iteration, displays `Holberton School` and then `Hi` on a
+  new line.
+  * Uses an `if` statement.
 
-* **5. Local variable**
-  * [5-local_variables](./5-local_variables): Bash script that lists all local variables,
-  environment variables and functions.
+* **5. 4 bad luck, 8 is your chance**
+  * [5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance): Bash script that loops
+  from 1 to 10 using a `while` loop and:
+    * Displays `bad luck` on the 4th iteration.
+    * Displays `good luck` on the 8th iteration.
+    * Displays `Holberton School` for all other iterations.
+  * Uses the `if`, `elif`, and `else` statements.
 
-* **6. Local variable**
-  * [6-create_local_variable](./6-create_local_variable): Bash script that creates
-  a new local variable named `BETTY` with value `Holberton`.
+* **6. Superstitious numbers**
+  * [6-superstitious_numbers](./6-superstitious_numbers): Bash script that displays
+  numbers from `1` to `20` using a `while` loop and:
+    * Displays `4` and then `bad luck from China` for the 4th iteration.
+    * Displays `9` and then `bad luck from Japan` for the 9th iteration.
+    * Displays `17` and then `bad luck from Italy` for the 17th iteration.
+  * Uses a `case` statement.
 
-* **7. Global variable**
-  * [7-create_global_variable](./7-create_global_variable): Bash script that
-  creates a new global variable named `HOLBERTON` with value `Betty`.
+* **7. Clock**
+  * [7-clock](./7-clock): Bash script that displays the time for 12 hours and 59 minutes.
+    * Displays hours from `0` to `12`.
+    * Displays minutes from `0` to `59`.
 
-* **8. Every addition to true knowledge is an addition to human power**
-  * [8-true_knowledge](./8-true_knowledge): Bash script that prints the result of the
-  addition of 128 with the value stored in the environment variable
-  `TRUEKNOWLEDGE`, followed by a new line.
+* **8. For ls**
+  * [8-for_ls](./8-for_ls): Bash script that displays the contents of the current directory
+  in list format.
+  * Only the part of the name after the first dash is displayed.
 
-* **9. Divide and rule**
-  * [9-divide_and_rule](./9-divide_and_rule): Bash script that prints the result
-  of `POWER` divided by `DIVIDE`. `POWER` and `DIVIDE` are environment variables.
+* **9. To file, or not to file**
+  * [9-to_file_or_not_to_file](./9-to_file_or_not_to_file): Bash script that gives information
+  about the `holbertonschool` file.
+    * If the file exists, displays: `holbertonschool file exists`.
+    * If the file does not exist, displays: `holbertonschool file does not exist`.
+    * If the file exists and is empty, displays: `holbertonschool file is empty`.
+    * If the file exists and is not empty, displays: `holbertonschoolfile is not
+    empty`.
+    * If the file exists and is a regular file, displays: `holbertonschool file
+    is a regular file`.
+    * Otherwise, displays nothing.
 
-* **10. Love is anterior to life, posterior to death, initial of creation, and the exponent of breath**
-  * [10-love_exponent_breath](./10-love_exponent_breath): Bash script that displays the
-  result of `BREATH` to the power of `LOVE`. `BREATH` and `LOVE` are environment variables.
+* **10. FizzBuzz**
+  * [10-fizzbuzz](./10-fizzbuzz): Bash script that displays numbers from
+  `1` to `100` in list format.
+  * Displays `FizzBuzz` when the number is a multiple of 3 and 5.
+  * Displays `Fizz` when the number is a multiple of 3.
+  * Displays `Buzz` when the number is a multiple of 5.
+  * Otherwise, displays the number.
 
-* **11. There are 10 types of people in the world -- Those who understand binary, and those who don't**
-  * [11-binary_to_decimal](./11-binary_to_decimal): Bash script that converts a number
-  in base 2 stored in the environment variable `BINARY` to base 10.
+* **11. Read and cut**
+  * [100-read_and_cut](./100-read_and_cut): Bash script that displays the contents of the
+  `/etc/passwd` file.
+  * Displays only the username, user id, and user home directory path for each line.
 
-* **12. Combination**
-  * [12-combinations](./12-combinations): Bash script that prints all possible combinations
-  of two letters, except `oo`, as follows:
-    * Letters are lower cases, from `a` to `z`.
-    * One combination per line.
-    * Alpha-ordered.
+* **12. Tell the story of passwd**
+  * [101-tell_the_story_of_passwd](./101-tell_the_story_of_passwd): Bash script that
+  tells stories based on the contents of the `/etc/passwd` file.
+  * Displays content from the file in the format: `The user USERNAME is part of
+  the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL. USER ID's
+  place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO`.
 
-* **13. Floats**
-  * [13-print_float](./13-print_float): Bash script that prints a number stored in the
-  environment variable `NUM` with two decimal places.
+* **13. Let's parse Apache logs**
+  * [102-lets_parse_apache_logs](./102-lets_parse_apache_logs): Bash script that displays
+  the visitor IP along with the HTTP status code for logs read from an Apache log access file.
+  * Displays content in the format `IP HTTP_CODE`.
+  * Uses `awk`.
 
-* **14. Decimal to Hexadecimal**
-  * [14-decimal_to_hexadecimal](./14-decimal_to_hexadecimal): Bash script
-  that converts a number in base 10 stored in the environment variable `DECIMAL` to base 16.
-
-* **15. Everyone is a proponent of strong encryption**
-  * [100-rot13](./100-rot13): Bash script that encodes and decodes text using the rot13
-  encryption.
-
-* **16. The eggs of the brood need to be an odd number**
-  * [101-odd](./101-odd): Bash script that prints every other line from the input,
-  starting with the first line.
-
-* **17. I'm an instant star. Just add water and stir.**
-  * [102-water_and_stir](./102-water_and_stir): Bash script that adds the two numbers
-  stored in the environment variables `WATER` and `STIR` and prints the result.
-  * `WATER` is in base `water`, `STIR` is in base `stir`, and the result is
-  in base `behlnort`.
+* **14. Dig the data**
+  * [103-dig_the-data](./103-dig_the-data): Bash script that reads content from an
+  Apace log access file and groups visitors by IP and HTTP status code.
+  * Displays the grouped number of visitors to an IP address in the format
+  `OCCURRENCE_NUMBER IP HTTP_CODE`.
+  * Logs are grouped in order of greatest to lowest number of visitors.
+  * Uses `awk`.
