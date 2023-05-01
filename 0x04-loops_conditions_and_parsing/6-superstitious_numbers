@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# A script that prints from 1 to 20 with exceptions
+
+index=1
+while [ $index -le 20 ]
+do
+	echo "$index"
+	case $index in 
+		4) echo "bad luck from China";;
+		9) echo "bad luck from Japan";;
+		17) echo "bad luck from Italy";;
+	esac
+	((index++))
+done
