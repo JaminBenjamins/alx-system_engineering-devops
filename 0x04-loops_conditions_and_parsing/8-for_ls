@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Display content of the currnt working directory 
+# Without displaying hidden files 
+
+plist=$(ls)
+for files in plist
+do
+	find "$files" | cut -d '-' -f2
+done
