@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# A script that prints a string of characters endlessly
+# A sleep command is inserted to pause the loop
+
+while true 
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
