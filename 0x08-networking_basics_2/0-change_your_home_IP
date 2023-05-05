@@ -1,4 +1,4 @@
-#!/usr/bin env bash
+#!/usr/bin/env bash
 # Configures an Ubuntu server as :
 # localhost resolves to 127.0.0.2
 # facebook.com resoles to 8.8.8.8
