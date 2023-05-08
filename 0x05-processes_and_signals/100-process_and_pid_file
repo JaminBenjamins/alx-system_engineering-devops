@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# A script that creates a file and prints 
+# to the file the PID 
+# Display some commands when some signals are raised
+
+touch /var/run/myscript.pid
+
+trap "I hate the kill command" SIGTERM 
+trap "Y U no love me?!" SIGINT
+trap "rm /var/run/myscript.pid; kill -9 $$" SIGTERM SIGQUIT
+
+echo $$ > /var/run/myscript.pid
+while true; do
+echo "To infinity an beyond"
+done
