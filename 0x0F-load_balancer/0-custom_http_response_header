@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Install Nginx with the configuration
+# Listening on port 80
+# Return a page containing content when reloading
+# Configure a move  code permanently
+# Having custom header response found
+
+apt-get update
+apt-get install nginx
+sudo service nginx start
+sudo sed -i "/http {/a\         add_header X-Served-By &HOSTNAME;" /etc/nginx.nginx.conf
+echo "Hello World!" | sudo tee /usr/share/nginx/html/index.html
+sudo service nginx restart
