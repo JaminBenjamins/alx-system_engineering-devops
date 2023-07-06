@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Looking at possible causes preventing Nginx from listening on port 80
+# Make the server listen on defined port
+
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
