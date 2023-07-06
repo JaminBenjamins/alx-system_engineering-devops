@@ -2,4 +2,4 @@
 # Configure nginx to run and listen to port 80
 service nginx start
 curl 0:80
-service nginx status
+service nginx status | grep "nginx is not running"
