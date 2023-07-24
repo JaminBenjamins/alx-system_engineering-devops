@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Returns a todo list information of a given employee"""
+""" Returns to-do list information of given employee  id"""
 import requests
 import sys
 
