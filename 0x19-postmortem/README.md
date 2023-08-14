@@ -1,16 +1,13 @@
 # Incident Report: Web server Outage
-=====================================
 
 This is a postmoterm report on the recent downtime of the website detailing the causes, resolutions and methods of mitigating future occurences of the same issue.
 
 ## Issue Summary
-===============
 
 The service interruption occured at around 1830 hours UTC on Friday 11th July and lasted for about 2 hours before the on-call engineers responded and mitigated the situation returning services back to normalcy. 
 The users of the website had slow loading speeds exceeding 500ms. And occassinoally a crush on the webpage as no information was displayed at the time when there was request for heavy graphical information or large sized pages. Approximately 40% of users were affected.  The cause of the issue was attributed mainly to the depletion of the server-side resource due to memory problems. 
 
 ## Timeline
-==========
 
 **August 11, 2023, 1830 (UTC)** : the monitoring system sends an alert notifying of frequent error codes returned and delay in HTTP requests. 
 **August 11, 2023, 1900 (UTC)** : The on-call team responds in attempt to return the situation to normalcy. 
