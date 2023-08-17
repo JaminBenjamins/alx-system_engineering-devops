@@ -3,7 +3,7 @@
 server {
     # Listening on port 80
     listen      80 default_server;
-    listen      [::]80 default_server;
+    listen      [::]:80 default_server;
 
     # Use IP of server as domain name
     server_name 54.234.36.174;
